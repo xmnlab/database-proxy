@@ -3,11 +3,12 @@
   "description": "A local proxy to connect private Observable notebooks to private databases",
   "version": "1.0.1",
   "bin": {
-    "observable-database-proxy": "./bin/observable-database-proxy"
+    "observable-database-proxy": "bin/observable-database-proxy"
   },
   "dependencies": {
-    "JSONStream": "^1.3.5",
+    "@mapd/connector": "^5.5.2",
     "esm": "^3.2.25",
+    "JSONStream": "^1.3.5",
     "micro": "^9.3.4",
     "mysql": "^2.17.1",
     "open": "^6.3.0",
