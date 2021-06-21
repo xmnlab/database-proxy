@@ -1,0 +1,6 @@
+name: database-proxy
+channels:
+  - conda-forge
+dependencies:
+  - nodejs 14.*  # nodejs 15 conflicts with thrift@git+ssh://git@github.com/apache/thrift.git
+  - docker-compose

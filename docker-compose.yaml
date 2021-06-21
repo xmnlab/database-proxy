@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  postgres:
+    image: postgres:9.6
+    hostname: postgres
+    ports:
+      - 25432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+
+  omniscidb:
+    image: omnisci/core-os-cpu:v5.5.0
+    hostname: omniscidb
+    ports:
+      - 6273:6273
+      - 6274:6274
+      - 6278:6278
+      - 6279:6279
